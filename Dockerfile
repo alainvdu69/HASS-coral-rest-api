@@ -22,7 +22,7 @@ RUN cd /tmp && \
 
 
 WORKDIR /app
-RUN  pip3 --no-cache-dir install Flask
+RUN  pip3 install Flask
 
 # Temporarily using my own code until https://github.com/robmarkcole/coral-pi-rest-server/issues/67 is resolved
 RUN wget https://raw.githubusercontent.com/grinco/coral-pi-rest-server/v1.0/coral-app.py -O /app/coral-app.py
